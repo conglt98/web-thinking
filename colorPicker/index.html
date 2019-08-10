@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Color Picker</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="layout">
+        <div class="banner">
+            <div class="title">
+                <h1>Color Picker</h1>
+            </div>
+            <div class="info" onclick="openModal()">
+                <img src="images/goku.png" alt="author info" />
+            </div>
+        </div>
+        <div class="content">
+            <div class="result">
+                <div class="color">
+                    <div class="value">
+                        <p>#808080</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chooser">
+                <div class="color-item">
+                    <div class="circle red"></div>
+                    <input id="r" class="slider" type="range" min="0" max="255" step="1" multiple
+                        oninput="changeColor(this)" onchange="changeColor(this)" />
+                    <span id="br">128</span>
+                </div>
+                <div class="color-item">
+                    <div class="circle green"></div>
+                    <input id="g" class="slider" type="range" min="0" max="255" step="1" multiple
+                        oninput="changeColor(this)" onchange="changeColor(this)" />
+                    <span id="bg">128</span>
+                </div>
+                <div class="color-item">
+                    <div class="circle blue"></div>
+                    <input id="b" class="slider" type="range" min="0" max="255" step="1" multiple
+                        oninput="changeColor(this)" onchange="changeColor(this)" />
+                    <span id="bb">128</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal-content">
+            <div class="modal-under">
+                <h2>Lê Thành Công</h2>
+            </div>
+            <div class="modal-below">
+                <div class="modal-left">
+                    <img src="./images/goku.png" alt="">
+                </div>
+
+                <div class="modal-right">
+                    <p><b>A student at University of Science.</b></p>
+                    <p><i>Email : conglt@vng.com.vn</i></p>
+                    <a href="https://www.fb.com/cong.le.98lhp" class="fa fa-facebook-square"></a>
+                    <a href="https://github.com/1612842" class="fa fa-github-square"></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

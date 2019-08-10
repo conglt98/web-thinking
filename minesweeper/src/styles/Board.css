@@ -1,0 +1,10 @@
+.board {
+    overflow: auto;
+    margin-top: 20px;  
+    border: 10px solid white;
+    border-radius: 10px;
+    
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}

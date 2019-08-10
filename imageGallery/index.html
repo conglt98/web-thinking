@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=utf-8 />
+  <title>Galerry</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+  <div id='cssmenu'>
+    <ul>
+      <li><a href='#'>Gallery</a></li>
+    </ul>
+  </div>
+
+  <div class="buttons">
+    <div class="upload-btn-wrapper">
+      <button class="btn">Upload</button>
+      <input id="f" type='file' onchange="display(this);" multiple />
+    </div>
+
+    <div class="upload-btn-wrapper">
+      <button class="btn" onclick="removeAll();"> Remove </button></<button>
+    </div>
+  </div>
+
+  <div id="photos">
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
