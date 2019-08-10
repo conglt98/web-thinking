@@ -1,6 +1,6 @@
 # Basic knowledge of Web development
 
-[Basic web](./01_basic-of-web-development.md)
+[Basic web](./01_basic_of_web_development.md)
 
 # Advance knowledge of Web development
 
